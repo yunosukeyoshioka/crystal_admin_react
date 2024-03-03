@@ -1,0 +1,104 @@
+.side_menu {
+  position: fixed;
+  color: white;
+  z-index: 1;
+
+  .menu_var_on {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .menu_var_off {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .menu_var_off:hover {
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  // .user_name {
+  //   background-color: black;
+  // }
+
+  .menu_on {
+    width: 15vw;
+    color: white;
+    background-color: #333;
+    height: 100vh;
+
+    .header {
+      background-color: #444;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .list_container {
+      padding: 20px;
+      margin-left: 10px;
+      overflow: auto;
+      width: 75%;
+      height: 75%;
+    }
+
+    .menu_list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: left;
+      margin-left: 15px;
+    }
+
+    .list {
+      margin-top: 15px;
+      cursor: pointer;
+
+      .back {
+        color: white;
+      }
+
+      .link {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .graphlist {
+      padding-left: 25px;
+    }
+
+    .extra {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: 444;
+    }
+  }
+}

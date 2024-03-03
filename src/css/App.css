@@ -1,0 +1,86 @@
+.side_menu {
+  position: fixed;
+  color: white;
+  z-index: 1;
+}
+.side_menu .menu_var_on {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.side_menu .menu_var_off {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.side_menu .menu_var_off:hover {
+  background-color: white;
+  border-radius: 50%;
+}
+.side_menu .icon {
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.side_menu .menu_on {
+  width: 15vw;
+  color: white;
+  background-color: #333;
+  height: 100vh;
+}
+.side_menu .menu_on .header {
+  background-color: #444;
+  padding: 20px;
+  text-align: center;
+}
+.side_menu .menu_on .list_container {
+  padding: 20px;
+  margin-left: 10px;
+  overflow: auto;
+  width: 75%;
+  height: 75%;
+}
+.side_menu .menu_on .menu_list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-left: 15px;
+}
+.side_menu .menu_on .list {
+  margin-top: 15px;
+  cursor: pointer;
+}
+.side_menu .menu_on .list .back {
+  color: white;
+}
+.side_menu .menu_on .list .link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.side_menu .menu_on .list .link:hover {
+  text-decoration: underline;
+}
+.side_menu .menu_on .graphlist {
+  padding-left: 25px;
+}
+.side_menu .menu_on .extra {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: 444;
+}
