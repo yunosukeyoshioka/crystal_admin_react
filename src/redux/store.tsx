@@ -16,6 +16,7 @@ export const store = configureStore({
   },
 });
 
+
 export type AppDispatch = typeof store.dispatch;
 type DispatchFunc = () => AppDispatch;
 export const useAppDispatch: DispatchFunc = useDispatch;
