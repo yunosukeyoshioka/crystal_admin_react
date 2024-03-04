@@ -7,6 +7,7 @@ import RentLog from "../features/rentLog/RentLogView";
 import Subscriber from "../features/subscriber/SubscriberView";
 import Layout from "./Layout";
 
+
 const App: React.FC = () => {
   return (
     <Router>
