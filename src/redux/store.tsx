@@ -6,7 +6,7 @@ import loginReducer from "../features/login/LoginSlice";
 import OnRentReducer from "../features/onRent/OnRentSlice";
 import RentLogReducer from "../features/rentLog/RentLogSlice";
 import SubscriberReducer from "../features/subscriber/SubscriberSlice";
-
+import PortInfoReducer from "../features/portInfo/PortInfoSlice";
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +14,7 @@ export const store = configureStore({
     OnRent: OnRentReducer,
     RentLog: RentLogReducer,
     Subscriber: SubscriberReducer,
+    PortInfo: PortInfoReducer
   },
 });
 

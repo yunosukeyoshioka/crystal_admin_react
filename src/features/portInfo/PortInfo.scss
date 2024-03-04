@@ -1,0 +1,82 @@
+.position_row {
+  display: flex;
+
+  .port_info_container {
+    // width: 85vw;
+    height: auto;
+    // margin-left: 15vw;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    background-color: #141b2d;
+
+    .port_info_title {
+      font-size: 30px;
+      margin-top: 6%;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      color: white;
+    }
+
+    .item_container {
+      width: 90%;
+      margin-top: 5%;
+      margin-bottom: 3%;
+
+      .port_item_container {
+        text-align: center;
+      }
+
+      /* 奇数行 */
+      tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+
+      /* 偶数行 */
+      tr:nth-child(even) {
+        background-color: #ccc;
+      }
+      .font_item {
+        font-size: 16px;
+        padding: 8px;
+      }
+    }
+  }
+}
+/* レスポンシブ対応　スマホ */
+@media (max-width: 767px) {
+  .position_row {
+    display: none;
+    .side_menu {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .port_info_container {
+    width: 85vw;
+    height: auto;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141b2d;
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .to_segway_button {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .to_segway_button {
+    display: none;
+  }
+}
