@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import "../../css/PortInfo.css";
 import {
   PortInfoInfo as portInfoInfo,
-  // PortInfoError as portInfoError,
-  // PortInfoUpdatedTime as portInfoUpdatedTime,
-  // PortInfoLoading as portInfoLoading,
+  PortInfoError as portInfoError,
+  PortInfoUpdatedTime as portInfoUpdatedTime,
+  PortInfoLoading as portInfoLoading,
   fetchAsyncPortInfo,
 } from "./PortInfoSlice";
 
@@ -16,11 +16,11 @@ const PortInfo: React.FC = () => {
   //レンタル中情報
   const portInfoData = useSelector(portInfoInfo);
   //エラー時メッセージ
-  // const portInfoErrorMsg = useSelector(portInfoError);
+  const portInfoErrorMsg = useSelector(portInfoError);
   //ロード中判定
-  // const portInfoLoadingJudge = useSelector(portInfoLoading);
+  const portInfoLoadingJudge = useSelector(portInfoLoading);
   //データ取得時間
-  // const portInfoGetTime = useSelector(portInfoUpdatedTime);
+  const portInfoGetTime = useSelector(portInfoUpdatedTime);
   const dispatch = useDispatch();
 
   //データ取得
@@ -29,12 +29,13 @@ const PortInfo: React.FC = () => {
     if (portInfoData === null) {
       dispatch(fetchAsyncPortInfo());
     }
-  }, [dispatch]);
+  }, [dispatch, portInfoData]);
 
   return (
     <div className="position_row">
       <div className="port_info_container">
         <h1 className="port_info_title">ポート情報一覧</h1>
+        <div className="time">最終更新時間 : {portInfoGetTime}</div>
         <Link to="/admin_map/Segway" className="to_segway_button">
           キックボード一覧へ
         </Link>

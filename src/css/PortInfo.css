@@ -16,7 +16,6 @@
 }
 .position_row .port_info_container .item_container {
   width: 90%;
-  margin-top: 5%;
   margin-bottom: 3%;
   /* 奇数行 */
   /* 偶数行 */
@@ -33,6 +32,14 @@
 .position_row .port_info_container .item_container .font_item {
   font-size: 16px;
   padding: 8px;
+}
+
+.time {
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5px;
+  width: 80%;
+  text-align: right;
 }
 
 /* レスポンシブ対応　スマホ */

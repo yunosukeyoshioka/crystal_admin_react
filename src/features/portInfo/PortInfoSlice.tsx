@@ -15,7 +15,7 @@ export const fetchAsyncPortInfo: any = createAsyncThunk<
 });
 
 const initialState: PortInfoState = {
-  PortInfo: null,
+  portInfo: null,
   updatedTime: "",
   loading: false,
   error: "",
@@ -29,7 +29,7 @@ const PortInfoSlice = createSlice({
     builder.addCase(fetchAsyncPortInfo.fulfilled, (state, action) => {
       //トークン認証&通信成功、データを受け取る
       if (action.payload.msg === "Success") {
-        state.PortInfo = action.payload.data;
+        state.portInfo = action.payload.data;
         state.updatedTime = GetTime();
         state.error = "";
       } else {
@@ -44,8 +44,8 @@ const PortInfoSlice = createSlice({
   },
 });
 
-export const PortInfoInfo = (state: RootState) => state.PortInfo.PortInfo;
-// export const PortInfoError = (state: RootState) => state.PortInfo.error;
-// export const PortInfoLoading = (state: RootState) => state.PortInfo.loading;
-// export const PortInfoUpdatedTime = (state: RootState) => state.PortInfo.updatedTime;
+export const PortInfoInfo = (state: RootState) => state.PortInfo.portInfo;
+export const PortInfoError = (state: RootState) => state.PortInfo.error;
+export const PortInfoLoading = (state: RootState) => state.PortInfo.loading;
+export const PortInfoUpdatedTime = (state: RootState) => state.PortInfo.updatedTime;
 export default PortInfoSlice.reducer;

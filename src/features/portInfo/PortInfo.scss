@@ -21,7 +21,7 @@
 
     .item_container {
       width: 90%;
-      margin-top: 5%;
+      // margin-top: 5%;
       margin-bottom: 3%;
 
       .port_item_container {
@@ -43,6 +43,13 @@
       }
     }
   }
+}
+.time {
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5px;
+  width: 80%;
+  text-align: right;
 }
 /* レスポンシブ対応　スマホ */
 @media (max-width: 767px) {

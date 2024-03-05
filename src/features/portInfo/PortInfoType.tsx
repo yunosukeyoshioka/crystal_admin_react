@@ -19,7 +19,7 @@ export interface PortInfoApiResponse {
 
 //state
 export interface PortInfoState {
-  PortInfo: PortInfoData[] | null;
+  portInfo: PortInfoData[] | null;
   updatedTime: string;
   loading: boolean;
   error: string | null;
